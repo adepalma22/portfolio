@@ -1,0 +1,588 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'inter';
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #011F1E;
+    height: 150px;
+    padding-right: 20px;
+}
+nav .logo img {
+    height: 90px;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-left: 35px;
+}
+
+nav ul {
+    align-items: center;
+    list-style: none;
+    background: #011F1E;
+    align-items: center;
+}
+nav ul li {
+    align-items: center;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+nav ul li a {
+    align-items: center;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #FAFAFA;
+    align-items: center;
+}
+nav ul li ul.dropdown li {
+    align-items: center;
+    display: block;
+}
+nav ul li ul.dropdown {
+    align-items: center;
+    width: 300px;
+    background-color: #B48E25;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    align-items: center;
+}
+nav ul li a:hover {
+    align-items: center;
+    background: #35615F;
+    align-items: center;
+}
+nav ul li:hover ul.dropdown {
+    align-items: center;
+    display: block;
+}
+.graphic {
+    width: 100%; /* Makes the image responsive and scale with the container */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+}
+body.home {
+    background-image: url('GRAPHIC DESIGN IMAGES/Group 6.png');
+    margin-top: 0px; /* Add a margin to move the content down */
+    background-position: center top; /* This places the image at the top */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: makes the background stay in place when scrolling */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-repeat: no-repeat; /* Ensures no tiling */
+    padding: 0;
+  }  
+body.graphicdesign {
+    .layout-container {
+        display: flex;
+        align-items: flex-start; /* Align items to the top of the container */
+      }
+      
+      .vertical-line-container {
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        align-items: center; /* Center the ball and line horizontally */
+        justify-content: flex-start; /* Align everything to the top */
+        margin-right: 20px; /* Add space between the line and photo grid */
+      }
+      
+      .line {
+        width: 2px; /* Thickness of the line */
+        height: 300px; /* Length of the line */
+        background-color: #000; /* Line color */
+      }
+      
+      .ball {
+        width: 10px; /* Diameter of the ball */
+        height: 10px; /* Diameter of the ball */
+        background-color: #000; /* Ball color */
+        border-radius: 50%; /* Makes the ball circular */
+      }
+      
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+        gap: 10px; /* Space between photos */
+      }
+      
+      .photo-grid img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+        object-fit: cover; /* Ensures images fit nicely */
+      }
+}
+
+body.about {
+    background-image: url('GRAPHIC DESIGN IMAGES/Group 7.png');
+    background-position: center top; /* This places the image at the top */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: makes the background stay in place when scrolling */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-repeat: no-repeat; /* Ensures no tiling */
+    padding: 0;
+  }  
+
+body.contact {
+    background-image: url('GRAPHIC DESIGN IMAGES/rectangle 53.png');
+    background-position: center bottom; /* This positions the image at the bottom center */
+    background-repeat: no-repeat; /* Ensures no tiling */
+    background-attachment: fixed; /* Optional: keeps the background fixed while scrolling */
+    background-size: cover; /* Ensures the image covers the entire background */
+    padding: 0; /* Removes any padding from the body */
+}
+
+
+
+.skillsbox {
+    background-color: #FAFAFA;
+    height: 700px;
+    width: 100%;
+    max-width: 100%;
+}
+.line-container {
+    background-color: #B48E25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; /* Space between lines and the word */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Line with Ball Container */
+  .line-with-ball {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Line Styling */
+  .line {
+    flex-grow:  90; /* Adjust the line's width */
+    height: 2px; /* Thickness of the line */
+    background-color: #FAFAFA; /* Line color */
+  }
+  
+  /* Ball Styling */
+  .ball {
+    width: 10px; /* Diameter of the ball */
+    height: 10px; /* Diameter of the ball */
+    background-color: #FAFAFA; /* Ball color */
+    border-radius: 50%; /* Makes it a circle */
+    margin-left: 0px; /* Space between ball and line */
+  }
+
+.word {
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size: 115px;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    background-color: #B48E25;
+    height: 150px;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Two columns with a divider in the center */
+    align-items: center; /* Aligns content vertically */
+    justify-items: center; /* Aligns content horizontally */
+    gap: 20px; /* Space between columns */
+    background-color: #FAFAFA; /* Optional background */
+    padding: 20px;
+    height: 100vh; /* Make the layout fill the viewport */
+  }
+  /* Skills container styling (use Flexbox) */
+.skills {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the columns */
+    width: 100%; /* Ensure the container takes full width */
+    padding: 20px;
+  }
+  
+  /* Skills container styling (use Flexbox) */
+.skills {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center; /* Horizontally center the columns */
+    width: 100%; /* Ensure the container takes full width */
+    padding: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside each column */
+    text-align: center; /* Center text inside h2 and ul */
+    margin: 0 20px; /* Add margin between columns */
+    margin-top: 50px;
+  }
+  
+  .column1 h2 {
+    font-family: 'Inria Serif';
+    font-size: 36px;
+    color: #35615F;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    align-self: flex-start; /* Align h2 to the start of the column */
+  }
+  .column2 h2 {
+    font-family: 'Inria Serif';
+    font-size: 36px;
+    color: #35615F;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    align-self: flex-start; /* Align h2 to the start of the column */
+  }
+  
+  .column1 ul {
+    list-style: circle;
+    text-align: left;
+    padding: 0;
+    padding-left: 0px;
+    margin-top: 0; /* Ensure there is no extra margin at the top of the list */
+  }
+  .column2 ul {
+    list-style: circle;
+    text-align: left;
+    padding: 0;
+    padding-left: 40px;
+    margin-top: 0; /* Ensure there is no extra margin at the top of the list */
+  }
+  
+  .column li {
+    font-family: 'Inria Serif';
+    font-size: 24px;
+    color: #011F1E;
+    margin-bottom: 10px;
+  }
+  
+  /* Divider styling */
+  .divider {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divider .line {
+    width: 2px; /* Thickness of the vertical line */
+    height: 300px; /* Height of the vertical line, adjust as needed */
+    background-color: #35615F; /* Color of the line */
+  }
+  
+  .divider .ball {
+    width: 10px; /* Diameter of the ball */
+    height: 10px; /* Diameter of the ball */
+    background-color: #35615F; /* Ball color */
+    border-radius: 50%; /* Makes it circular */
+  }
+  
+  .divider .top-ball {
+    margin-bottom: 0px; /* Space between top ball and line */
+  }
+  
+  .divider .bottom-ball {
+    margin-top: 0px; /* Space between bottom ball and line */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .skills {
+      flex-direction: column; /* Stack columns vertically on small screens */
+      align-items: center;
+      height: 100%;
+      max-height: 100%;
+    }
+  
+    .column {
+      margin: 20px 0; /* Adjust margins for vertical layout */
+    }
+  
+    .divider {
+      display: none; /* Optionally hide the divider on smaller screens */
+    }
+  }
+
+  .headingbox {
+    display: flex;
+    background-color: #b1c2c1;
+    max-height: 800px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+  }
+  .headingbox h1 {
+    font-size: 90px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 175;
+    color: #FAFAFA;
+  }
+  .dates {
+    display: flex;
+    background-color: #B48E25;
+    max-width: 1100px;
+    margin-left: 90px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 0pc 1pc 0pc 0pc;
+  }
+  .dates h2 {
+    display: flex;
+    align-items: center;
+    font-family: 'Inria Serif';
+    font-size: 45px;
+    color: #fafafa;
+    justify-content: center;
+  }
+  .layout-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top of the container */
+  }
+  
+  .vertical-line-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center the ball and line horizontally */
+    justify-content: flex-start; /* Align everything to the top */
+    margin-right: 30px; /* Add space between the line and photo grid */
+    .line {
+        width: 2px; /* Thickness of the line */
+        height: 2500px; /* Length of the line */
+        background-color: #000; /* Line color */
+        margin-left: 110px;
+        margin-top: -10px; /* Move the line upwards (negative margin) */
+      }
+      
+      .ball {
+        width: 10px; /* Diameter of the ball */
+        height: 10px; /* Diameter of the ball */
+        background-color: #000; /* Ball color */
+        border-radius: 50%; /* Makes the ball circular */
+        margin-left: 110px;
+        margin-top: -45px; /* Move the line upwards (negative margin) */
+      }
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between photos */
+  }
+  .photo-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover; /* Ensures images fit nicely */
+  }
+  .Photobbox h1 {
+    background-color: #B48E25;
+    color: #FAFAFA;
+    font-family: ""
+
+  }
+  
+  .section-wildlife {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Allows positioning relative to this container */
+    padding-top: 50px; /* Space above the horizontal line */
+    padding-bottom: 50px; /* Space for bottom content */
+    width: 100%; /* Ensure full width */
+}
+.section-wildlife .horizontal-line-container {
+    display: flex;
+    align-items: center; /* Align line and balls */
+    justify-content: center; /* Center the line horizontally */
+    width: 100%; /* Full width of the section */
+    margin-bottom: 20px; /* Space below the line */
+}
+.section-wildlife .horizontal-line-container .line {
+    height: 2px;
+    background-color: #333; /* Line color */
+    flex-grow: .75; /* Responsive line width */
+}
+.section-wildlife .horizontal-line-container .ball {
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Ball color */
+    border-radius: 50%;
+}
+.section-wildlife h1 {
+    padding: 20px 40px;
+    background-color: #35615F; /* Dark green background */
+    color: #FAFAFA; /* White text */
+    font-family: "Inria Serif", serif;
+    font-size: 2rem; /* Adjust size as needed */
+    border-radius: 0px 0px 15px 15px; /* Rounded corners */
+    text-align: center;
+    margin-top: 20px; /* Space from the horizontal line */
+    z-index: 2; /* Ensure it appears above the line */
+    transform: translateY(-60%);
+}
+.section-wildlife p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    margin: 20px auto;
+    color: #FAFAFA; /* White text */
+    background-color: #b1c2c1; /* Light green background */
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px; /* Rounded corners */
+    width: 850px; /* Limit width */
+}
+.section-wildlife .wildlife-swipemore {
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded edges */
+    background-color: #f5f5f5; /* Light background */
+    text-align: center;
+    max-width: 400px; /* Adjust the width as needed */
+    color: #333; /* Text color */
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+ 
+
+
+.section-Night {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Allows positioning relative to this container */
+    padding-top: 50px; /* Space above the horizontal line */
+}
+.section-Night .horizontal-line-container {
+    display: flex;
+    align-items: center; /* Align line and balls */
+    justify-content: center; /* Center the line horizontally */
+    width: 100%; /* Full width of the section */
+    margin-bottom: 20px; /* Space below the line */
+}
+.section-Night .horizontal-line-container .line {
+    height: 2px;
+    background-color: #333; /* Line color */
+    flex-grow: .75; /* Responsive line width */
+}
+.section-Night .horizontal-line-container .ball {
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Ball color */
+    border-radius: 50%;
+}
+.section-Night h1 {
+    padding: 20px 40px;
+    background-color: #35615F; /* Dark green background */
+    color: #FAFAFA; /* White text */
+    font-family: "Inria Serif", serif;
+    font-size: 2rem; /* Adjust size as needed */
+    border-radius: 0px 0px 15px 15px; /* Rounded corners */
+    text-align: center;
+    margin-top: 20px; /* Space from the horizontal line */
+    z-index: 2; /* Ensure it appears above the line */
+    transform: translateY(-60%);
+}
+.section-Night p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    margin: 20px auto;
+    color: #FAFAFA; /* White text */
+    background-color: #b1c2c1; /* Light green background */
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px; /* Rounded corners */
+    width: 850px; /* Limit width */
+}
+.section-Night .wildlife-swipemore {
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded edges */
+    background-color: #f5f5f5; /* Light background */
+    text-align: center;
+    max-width: 400px; /* Adjust the width as needed */
+    color: #333; /* Text color */
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+.section-Other {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Allows positioning relative to this container */
+    padding-top: 50px; /* Space above the horizontal line */
+    padding-bottom: 50px; /* Space for bottom content */
+    width: 100%; /* Ensure full width */
+}
+.section-Other .horizontal-line-container {
+    display: flex;
+    align-items: center; /* Align line and balls */
+    justify-content: center; /* Center the line horizontally */
+    width: 100%; /* Full width of the section */
+    margin-bottom: 20px; /* Space below the line */
+}
+.section-Other .horizontal-line-container .line {
+    height: 2px;
+    background-color: #333; /* Line color */
+    flex-grow: .75; /* Responsive line width */
+}
+.section-Other .horizontal-line-container .ball {
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Ball color */
+    border-radius: 50%;
+}
+.section-Other h1 {
+    padding: 20px 40px;
+    background-color: #35615F; /* Dark green background */
+    color: #FAFAFA; /* White text */
+    font-family: "Inria Serif", serif;
+    font-size: 2rem; /* Adjust size as needed */
+    border-radius: 0px 0px 15px 15px; /* Rounded corners */
+    text-align: center;
+    margin-top: 20px; /* Space from the horizontal line */
+    z-index: 2; /* Ensure it appears above the line */
+    transform: translateY(-60%);
+}
+.section-Other p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    margin: 20px auto;
+    color: #FAFAFA; /* White text */
+    background-color: #b1c2c1; /* Light green background */
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px; /* Rounded corners */
+    width: 850px; /* Limit width */
+}
+.section-Other .wildlife-swipemore {
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded edges */
+    background-color: #f5f5f5; /* Light background */
+    text-align: center;
+    max-width: 400px; /* Adjust the width as needed */
+    color: #333; /* Text color */
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+

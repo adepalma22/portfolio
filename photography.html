@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allison DePalma - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">
+        <img
+          src="GRAPHIC DESIGN IMAGES/DePalma logo FINAL WHITE.png"
+          alt="Allison DePalma Logo"
+        />
+      </a>
+      <ul>
+        <li>
+          <a href="index.html">WORK</a>
+          <ul class="dropdown">
+            <li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="fineart.html">FINE ART</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="headingbox">
+      <h1>PHOTOGRAPHY</h1>
+    </div>
+    <div class="Photobox">
+      <h1>Digital & Analog Photography</h1>
+    </div>
+
+    <!-- WILDLIFE SECTION -->
+    <div class="section-wildlife">
+      <div class="horizontal-line-container">
+        <div class="ball"></div>
+        <div class="line"></div>
+        <div class="ball"></div>
+      </div>
+      <h1>WILDLIFE</h1>
+      <p>FEATURED</p>
+
+      <div class="swiper-container mySwiperWildlife">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="GRAPHIC DESIGN IMAGES/wild 1.jpeg"
+              alt="Wildlife Image 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="GRAPHIC DESIGN IMAGES/wild_2.jpeg"
+              alt="Wildlife Image 2"
+            />
+          </div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="wildlife-swipemore">Swipe for more >></div>
+    </div>
+
+    <!-- NIGHT SECTION -->
+    <div class="section-Night">
+      <div class="horizontal-line-container">
+        <div class="ball"></div>
+        <div class="line"></div>
+        <div class="ball"></div>
+      </div>
+      <h1 class="rounded-container">NIGHT</h1>
+      <p>FEATURED</p>
+
+      <div class="swiper-container mySwiperNight">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="GRAPHIC DESIGN IMAGES/night 1.jpeg" alt="Night Image 1" />
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="rounded-paragraph">Swipe for more</div>
+    </div>
+
+    <!-- OTHER SECTION -->
+    <div class="section-Other">
+      <div class="horizontal-line-container">
+        <div class="ball"></div>
+        <div class="line"></div>
+        <div class="ball"></div>
+      </div>
+      <h1 class="rounded-container">OTHER</h1>
+      <p>FEATURED</p>
+
+      <div class="swiper-container mySwiperOther">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="rounded-paragraph">Swipe for more</div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize each swiper instance with a unique class
+        var swiperWildlife = new Swiper(".mySwiperWildlife", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+
+        var swiperNight = new Swiper(".mySwiperNight", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+
+        var swiperOther = new Swiper(".mySwiperOther", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      });
+    </script>
+    <!-- Footer -->
+    <div>Footer</div>
+  </body>
+</html>
